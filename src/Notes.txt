@@ -26,7 +26,13 @@ Higher order functions.
 
 Nested functions.
 
-Case classes:: Scala supports the notion of case classes. Case classes are regular classes which export their constructor parameters and which provide a recursive decomposition mechanism via pattern matching.
+Case classes:: Scala supports the notion of case classes. Case classes are regular classes which export their constructor
+ parameters and which provide a recursive decomposition mechanism via pattern matching.
+
+
+ Pattern Matching with a First Match policy:
+
+ Classes and companion objects.
 
 
 
