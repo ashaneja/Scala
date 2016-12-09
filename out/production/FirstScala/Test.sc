@@ -26,7 +26,7 @@ println(range foreach(x=>println(x)))
 
 //val pf1= PartialFunction(x:Any,y:String)
 // The above syntax is wrong. When using in-built functions
-// and classes, the parameterization should be used. Meaning with [] instead of ()
+// and classes, the parameterization should be used.
 
 val pf1:PartialFunction[Any, String]={ case s:String=>"STRING"}
 val pf2:PartialFunction[Any, String]={ case s:Double=>"DOUBLE"}
