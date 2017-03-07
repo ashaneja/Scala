@@ -41,6 +41,6 @@ Concept for Comprehensions.
 
 Variance of type parameters.
 
-Implicit Params that are autimatically added if not provided by the call itself.
+Implicit Params that are automatically added if not provided by the call itself.
 
 
