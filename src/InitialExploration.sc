@@ -1,3 +1,20 @@
+
+
+
+// Initializing a class with params
+class Person(val name: String, var age: Int)
+
+val ash = new Person("Ashish", 100)
+ash.age = 300
+
+// Concept of Tuples
+
+val tup1 = ("one", 1, "won", ash)
+println(tup1._1)
+println(tup1._2)
+println(tup1._3)
+println(tup1._4.toString)
+
 println("Starting")
 
 def someMethod(input:String):String={
@@ -7,10 +24,6 @@ someMethod("Ashish   : ")
 
 // Vals and vars should be initialized when declared.
 
-// Initializing a class with params
-class Person(val name:String, var age:Int)
-val ash = new Person("Ashish", 100)
-ash.age=300
 
 // concept of ranges
 var range = 0 to 10 by 2
@@ -52,3 +65,11 @@ def checkFunction(x:Any, f:PartialFunction[Any, String])={
 checkFunction("100", pf1)
 checkFunction(true, pf2)
 
+object TestObject {
+  def saySomething = println("This is its")
+}
+
+TestObject.saySomething
+
+val range2 = 0 to 10 by 2
+(range2 foreach (x2 => println(x2)))

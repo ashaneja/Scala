@@ -1,4 +1,4 @@
-
+import java.util
 // Partial Functions
 // Defined for only a subset of input values.
 
@@ -76,3 +76,9 @@ for {
   breedYield <- dogs
   if breedYield startsWith "A"
 } yield breedYield
+
+
+// Inferring Type information
+// In this case, the Type info is completely inferred from the RHS
+val map = new java.util.HashMap[String, Integer]
+
