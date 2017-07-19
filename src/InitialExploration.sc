@@ -1,5 +1,16 @@
 
 
+val Breed= List("Doberman", "Yorkshire Terrier", "Dachshund",
+  "Scottish Terrier", "Great Dane", "Portuguese Water Dog")
+// In this example, there is an implicit yield happeneing.
+// Therefore it must be wrapped as an expression and
+// only the yielded value is available outside.
+for {breed <- Breed
+     upperBreed = breed.toUpperCase()
+}
+  println (upperBreed)
+
+
 
 // Initializing a class with params
 class Person(val name: String, var age: Int)
@@ -22,7 +33,7 @@ def someMethod(input:String):String={
 }
 someMethod("Ashish   : ")
 
-// Vals and vars should be initialized when declared.
+// Vals and vars should be initialized when \9*]///// .
 
 
 // concept of ranges
@@ -73,3 +84,17 @@ TestObject.saySomething
 
 val range2 = 0 to 10 by 2
 (range2 foreach (x2 => println(x2)))
+
+// Both the below 2 are different ways of declaring a Tuple
+val t1:(Int, String)=(1,"ONE")
+val t2:Tuple2[Int, String]=(1,"One")
+
+val f1:(Int, String)=> String = (i,s)=>s+i
+
+// So in this case, the Function has to be defined as Function2
+// basically meaning that the Function has 2 params and the return is a String.
+// This is the same as in Tuple where the var has to be defined as a Tuple2 to signify how many elements are there as a apart of that
+//particular Tuple.
+// The key thing is the square brackets in both the Tuple definition as well as the Function definition.
+val f2:Function2[Int, String, String]=(i,s)=>i+s
+

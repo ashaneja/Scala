@@ -1,6 +1,7 @@
 package com.ashish.initial
 
 /**
+  * Implementation of a Graph with an included list of Nodes.
  * Created by ash on 7/13/16.
  */
 class Graph {

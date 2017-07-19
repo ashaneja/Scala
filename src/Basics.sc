@@ -1,6 +1,39 @@
+import java.util
+
+
+
+// Showing the usage of return statements from  if conditions.
+val test="shish"
+val testReult=if(test startsWith("a")){
+  "FOUND IT"
+}else{
+  "DID NOT FIND IT"
+}
+println(testReult)
+println(test)
+
+
+
+def staticImport(input:String)={
+  import java.math.BigInteger.{
+  ONE=>_, // This is effectively masking the value of ONE
+  TEN,
+  ZERO=>JAVAZERO // This is renaming the value
+  }
+  //println("ONE "+ONE)
+  println(input.toUpperCase)
+  println("TEN::"+TEN)
+  println("JAVAZERO::"+JAVAZERO)
+  //println("TWO"+TWO)
+}
+staticImport("hello")
+
+
+
 
 // Partial Functions
 // Defined for only a subset of input values.
+// Also the PF can have only 2 arguments, the input and the output.
 
 val pF1:PartialFunction[Any, String]={case s:String=>"YES"}
 val pF2:PartialFunction[Any, String]={case s:Double=>"YES"}
@@ -54,6 +87,10 @@ object UsageOfMain{
 }
 // Parameterized types
 val listOfStrings:List[String] = List("one", "two", "three")
+// See the Style of importing
+val someMap = new util.HashMap[Integer, String]
+someMap
+
 
 // Iterating over List
 val dogs=List("ABC", "BCD", "DEF")
@@ -90,4 +127,9 @@ findNumbersToMatchSum(20, 35) foreach {
   case(i, j)=> println("Number pair is "+i +" "+j)
 }
 
+val someList= List(1,2,3)
+println(someList)
+4::someList  // The :: operator assosiates to the right and not to the lest as is the case with other operators
+
+println(someList)
 

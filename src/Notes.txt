@@ -44,3 +44,65 @@ Variance of type parameters.
 Implicit Params that are automatically added if not provided by the call itself.
 
 
+
+// Scala for impatient
+Curried Functions
+	Passing a Tuple to a function that takes a multiple argument list.
+	Methods with :: bind to the right instead of binding to the left
+	List cons operator is ::
+	and the Seq cons operator is +:
+	Higher order function :-> Function that takes another function as argument.
+
+	Command for REPL .. Scala
+	Scala build tool .. sbt
+	StringOps class
+	RichInt
+	RichDouble
+	RichFloat classes
+	No ++ operator
+	and No -- operator
+	USage of the package object and the methods defined in it so that they can be used directly in the program without the need of importing them again
+
+	Presence of companion object that would provide utility methods for some class. Like BigInt has a companion object that is available in scala.math package.
+	apply method is the one that provides the implementation for the call when you say object ()
+	so this is the implementation of the double brackets function. The apply method is a comman way of constructing an object
+	Square brakcets for Type parameters
+	[B>:Char] B is any supertype of char.
+
+
+	FOr Loops have return values. Blocks of code have return values.
+	If the for loop has 2 branches each with a different return type than the return value for the entire branch is of type Any.
+	If the branch have no return type than the type of the entire expression is of Unit.
+	Notice the difference between Any and Unit
+
+
+	var y=2
+// In this case, z is getting assigned a value of Unit because the return type of expression y=1 is Unit
+var z=y=1
+
+
+Interpolators for print statement
+print(f"This is something")
+s ->only expressions and no formatting
+raw --> escape charachters are not interpreted.
+
+The output of a while loop is set in unit unless it ir returning something
+
+Functions vs methods : MEthods are associated with an Object whereas a function is not associated with an Object. It
+is a standalone piece of code.
+
+Default arguments and named arguments
+
+Functions with multi arguments
+
+
+HashMap vs SortedMap vs LinkedHashMap
+
+
+TTD:
+Usage of java.util.Properties
+Test if a number is a triangular number
+
+
+
+
